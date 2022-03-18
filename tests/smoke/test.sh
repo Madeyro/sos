@@ -10,8 +10,8 @@ rlJournalStart
     rlPhaseEnd
 
     rlPhaseStartTest
-        rlRun "tmt --help | tee output" 0 "Check help message"
-        rlAssertGrep "Test Management Tool" "output"
+        rlRun "sos --help | tee output" 0 "Check help message"
+        rlAssertGrep "sos <component>" "output"
     rlPhaseEnd
 
     rlPhaseStartCleanup
