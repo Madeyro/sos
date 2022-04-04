@@ -1,0 +1,7 @@
+prepare:
+    how: shell
+    script:
+      - dnf -y remove sos
+      - dnf -y install python3 python3-pip ethtool
+      - pip3 install -r requirements.txt
+      - pip3 install avocado-framework==94.0

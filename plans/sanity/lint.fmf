@@ -1,4 +1,5 @@
 summary: Metadata used by tmt itself are valid
+order: 30
 discover:
     how: shell
     tests:

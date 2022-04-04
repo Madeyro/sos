@@ -1,0 +1,9 @@
+summary: Verify core functionality by running unit tests
+description:
+    Run foreman testing
+order: 70
+discover:
+    how: shell
+    tests:
+      - name: /stage/foreman
+        test: PYTHONPATH=tests/ avocado run --test-runner=runner -t foreman tests/product_tests/foreman/
