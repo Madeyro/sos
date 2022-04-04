@@ -1,6 +1,6 @@
 summary: Verify core functionality by running unit tests
 description:
-    Run all unit tests
+    Run all unit tests and stage one tests
 discover:
     how: shell
     tests:
