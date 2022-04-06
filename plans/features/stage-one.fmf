@@ -1,6 +1,7 @@
 summary: Verify core functionality by running unit tests
 description:
     Run all unit tests and stage one tests
+order: 55
 discover:
     how: shell
     tests:
