@@ -1,0 +1,9 @@
+summary: Tier 0 shell test plan
+descriptions:
+    Execute tests which are living in a different repository
+discover:
+    how: fmf
+    url: https://github.com/Madeyro/sos-test.git
+    filter: "tier: 0"
+execute:
+    how: tmt
