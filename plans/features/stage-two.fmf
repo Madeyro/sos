@@ -6,7 +6,5 @@ prepare+:
     script+:
       - dnf install -y python3-pexpect
 discover:
-    how: shell
-    tests:
-      - name: /stage/two
-        test: PYTHONPATH=tests/ avocado run --test-runner=runner -t stagetwo tests/{cleaner,collect,report,vendor}_tests
+    how: fmf
+    filter: 'tier: stagetwo'
