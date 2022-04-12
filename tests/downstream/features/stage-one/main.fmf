@@ -1,0 +1,4 @@
+summary: Concise summary describing what the test does
+test: ./runtest.sh
+tier: 0
+require: sos
