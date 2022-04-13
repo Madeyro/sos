@@ -1,5 +1,5 @@
 summary: Tier 0 shell test plan
-descriptions:
+description:
     Execute tests which are living in a different repository
 discover:
     how: fmf
