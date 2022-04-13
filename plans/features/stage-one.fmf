@@ -3,9 +3,5 @@ description:
     Run all unit tests and stage one tests
 order: 55
 discover:
-    how: shell
-    tests:
-      - name: /stage/unit-tests
-        test: PYTHONPATH=. avocado run tests/unittests/
-      - name: /stage/one
-        test: PYTHONPATH=tests/ avocado run --test-runner=runner -t stageone tests/{cleaner,collect,report,vendor}_tests
+    how: fmf
+    filter: "tier: stageone"
