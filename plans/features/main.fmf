@@ -5,3 +5,7 @@ prepare:
       - dnf -y install python3 python3-pip ethtool findutils
       - pip3 install -r requirements.txt
       - pip3 install avocado-framework==94.0
+
+finish:
+    how: shell
+    script: tests/utils/collect_reports.sh

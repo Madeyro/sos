@@ -7,3 +7,6 @@ discover:
     filter: "tier: 0"
 execute:
     how: tmt
+finish:
+    how: shell
+    script: tests/utils/collect_reports.sh
