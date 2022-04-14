@@ -5,3 +5,6 @@ order: 55
 discover:
     how: fmf
     filter: "tier: stageone"
+finish:
+    how: shell
+    script: tests/utils/collect_reports.sh
