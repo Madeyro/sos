@@ -1,6 +1,10 @@
 summary: Tier 0 shell test plan
 description:
     Execute tests which are living in a different repository
+prepare:
+    how: shell
+    script:
+      - dnf install -y tar findutils
 discover:
     how: fmf
     url: https://github.com/Madeyro/sos-test.git
