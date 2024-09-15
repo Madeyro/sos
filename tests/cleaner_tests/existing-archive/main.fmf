@@ -1,0 +1,7 @@
+summary: Extract an already created archive and clean it
+description:
+    Ensure that we can extract an already created archive and clean it the
+    same as we would an in-line run of `report --clean`.
+    Note that this copies heavily from the full_report_run test.
+tier: stagetwo
+test: avocado ./existing_archive.py

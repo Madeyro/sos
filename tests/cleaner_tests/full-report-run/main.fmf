@@ -1,0 +1,7 @@
+summary: Unrestricted report execution through sos clean
+description:
+    Run an unrestricted report execution through sos clean, ensuring that
+    our obfuscation is reliable across arbitrary plugin sets and not just the
+    'main' plugins that tend to collect data needing obfuscation
+tier: stagetwo
+test: avocado ./full_report_run.py
