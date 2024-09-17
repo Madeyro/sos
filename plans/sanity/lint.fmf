@@ -1,0 +1,11 @@
+summary: Metadata used by tmt itself are valid
+order: 30
+discover:
+    how: shell
+    tests:
+      - name: /lint/tests
+        require: tmt
+        test: tmt tests lint
+      - name: /lint/plans
+        require: tmt
+        test: tmt plans lint

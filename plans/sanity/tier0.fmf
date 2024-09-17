@@ -1,0 +1,8 @@
+summary: Select all tests with Tier 0 tag
+description:
+    Run all tests suitable for gating
+order: 50
+discover:
+    how: fmf
+    filter: 'tier: 0'
+

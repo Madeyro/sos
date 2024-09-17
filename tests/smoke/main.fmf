@@ -1,0 +1,5 @@
+summary: Concise summary describing what the test does
+test: ./test.sh
+framework: beakerlib
+tier: 0
+require: sos
